@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // Tasks.js
+=======
+>>>>>>> 77b89b1 (Update task-manager with new changes)
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import TaskForm from './components/TaskForm';

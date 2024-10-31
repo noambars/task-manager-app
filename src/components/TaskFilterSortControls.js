@@ -1,3 +1,4 @@
+
 // TaskFilterSortControls.js
 import React from 'react';
 
@@ -16,6 +17,24 @@ import React from 'react';
  * - A dropdown for filtering tasks by status (all, completed, incomplete).
  * - A dropdown for selecting the field to sort by (title or ID).
  * - A dropdown for selecting the sorting order (ascending or descending).
+=======
+import React from 'react';
+
+/**
+ * TaskFilterSortControls - Component providing controls for filtering and sorting tasks.
+ *
+ * Props:
+ * - filter (string): The current filter value for task status ("all", "completed", or "incomplete").
+ * - sortField (string): The field by which tasks are currently sorted ("title" or "id").
+ * - sortOrder (string): The current sort order ("asc" for ascending or "desc" for descending).
+ * - handleFilterChange (function): Callback function to update the filter selection.
+ * - handleSortFieldChange (function): Callback function to update the sorting field.
+ * - handleSortChange (function): Callback function to update the sorting order.
+ *
+ * Renders:
+ * - Filter dropdown for selecting task status.
+ * - Sort field dropdown for selecting the field to sort by.
+ * - Sort order dropdown to set the order of sorting.
  */
 const TaskFilterSortControls = ({ filter, sortField, sortOrder, handleFilterChange, handleSortFieldChange, handleSortChange }) => {
   return (
@@ -28,7 +47,7 @@ const TaskFilterSortControls = ({ filter, sortField, sortOrder, handleFilterChan
           <option value="incomplete">Incomplete</option>
         </select>
       </div>
-      <div style={{paddingLeft: '20px'}}>
+      <div style={{ paddingLeft: '20px' }}>
         <label>Sort by: </label>
         <select value={sortField} onChange={handleSortFieldChange}>
           <option value="title">Title</option>

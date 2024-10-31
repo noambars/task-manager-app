@@ -1,4 +1,3 @@
-// components/LoadingErrorMessages.js
 import React from 'react';
 
 /**
